@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32vh;
+}
+
+#value {
+    font-size: 6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+}
+
+.btn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin: 8px;
+    letter-spacing: 0.3rem;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.btn.decrease:hover {
+    color: red;
+}
+
+.btn.increase:hover{
+    color: green;
+}
+
+.btn.reset:hover{
+    color: yellow;
+}
+
+@media screen and (max-width: 420px) 
+{    
+    button{
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+    }
+
+    .btn{
+       margin: 15px; 
+       
+    }
+
+    .btn .reset {
+        margin-left: 2px;
+    }
+}
